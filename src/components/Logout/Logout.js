@@ -1,13 +1,38 @@
+
 import React from 'react';
 import './Logout.css';
 import logoutPic from '../../assets/logoutPic.png';
-
-const Logout = () => {
+const Logout = (props) => {
     return(
         <div>
-            <img id="logout" src={logoutPic} alt="powerButton" />
+            <img id="logout" 
+                src={logoutPic} 
+                alt="Power Button" 
+                onClick={props.clearSession} />
         </div>
     )
 }
-
 export default Logout;
+
+
+
+
+
+
+
+// import React from 'react';
+// import './Logout.css';
+// import logoutPic from '../../assets/logoutPic.png';
+
+// const Logout = (props) => {
+//     return(
+//         <div>
+//             <img id="logout" 
+//             src={logoutPic} 
+//             alt="powerButton" 
+//             onClick={props.clearSession}/>
+//         </div>
+//     )
+// }
+
+// export default Logout;
